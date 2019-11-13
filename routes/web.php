@@ -12,17 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', ['pageTitle' => 'Homepage']);
 })->name('home');
 
 Route::get('/services', function () {
-    return view('services');
+    return view('services', ['pageTitle' => 'Services']);
 })->name('services');
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', ['pageTitle' => 'About']);
 })->name('about');
 
 Route::get('/contact', function () {
-    return view('contact');
+    return view('contact', ['pageTitle' => 'Contact']);
 })->name('contact');
